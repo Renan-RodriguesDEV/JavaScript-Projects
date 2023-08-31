@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>super pc</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            background: fixed linear-gradient(#270015,black,#270015);
+            font-size: medium;
+            font-family: sans-serif;
+            color: beige;
+            text-align: center;
+        }
+
+        h1{
+            color:black;
+            border: 2px solid red;
+            display: flex;
+            padding: 10px 50%;
+            background-image:url(https://media1.giphy.com/media/3oEjHWlmAWKcIwyLZe/giphy.gif);
+            animation: anima 2s infinite 0.5S linear 
+        }
+
+        #dados {
+            background:violet;
+            margin: 40px 500px;
+            text-align: center;
+            border: 2px solid whitesmoke;
+            border-radius: 2px 2px;
+        }
+
+        #txti,#txtf,#txtp{
+            display: flex;
+            padding:0px 50px;
+            color:greenyellow;
+            margin: 3%;
+            background-color: #310044;
+            transition: linear 0.8s;
+        }
+
+        #txti:hover,#txtf:hover,#txtp:hover{
+            background: rebeccapurple;
+        }
+
+        #Bnt{
+            background: #310044;
+            transition: linear 1s;
+        }
+
+        #Bnt:hover{
+            background-color: violet;
+        }
+        
+        #res{
+            display: flex;
+            align-items: center;
+            margin: 50px 500px;
+            padding: 10px 10px;
+            border-left:2px solid violet ;
+        }
+        @keyframes anima{
+            0%{
+                opacity: 100%;
+            }
+            100%{
+                opacity: 0%;
+            }
+            
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Vamos contar</h1>
+    </header>
+    <section>
+        <div id="dados">
+            <p>inicio: <input type="number" id="txti"></p>
+            <p>fim:<input type="number" id="txtf"></p>
+            <p>passo:<input type="number" id="txtp"></p>
+            <input id="Bnt" type="button" value="contar" onclick="contar()">
+        </div>
+        <div id="res">
+            preparendo a contagem...
+        </div>
+    </section>
+    <script src="ex16.js"></script>
+    <footer></footer>
+</body>
+
+</html>
